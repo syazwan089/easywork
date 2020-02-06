@@ -39,7 +39,6 @@
                                             <th>Emp ID</th>
                                             <th>Name</th>
                                             <th>City</th>
-                                            <th>Created Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -50,7 +49,6 @@
                                             <td><?php echo $item['emp_id'] ?></td>
                                             <td><?php echo $item['full_name'] ?></td>
                                             <td><?php echo $item['city'] ?></td>
-                                            <td><?php echo $item['created_at'] ?></td>
                                             <td><a class="btn btn-primary btn-sm" href="/employee/view/<?php echo $item['id'] ?>">View</a></td>
                                             
                                         </tr>

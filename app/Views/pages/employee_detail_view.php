@@ -48,16 +48,18 @@
 
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-envelope-o"></i> Mail Inbox <span class="badge badge-primary pull-right">10</span></a>
+                                        <a href="#"> <i class="fa fa-envelope-o"></i> Employee ID <p class="pull-right"><?php echo $content['emp_id'] ?></p></a>
+                                    </li>
+                                   
+                                    <li class="list-group-item">
+                                        <a href="#"> <i class="fa fa-bell-o"></i> City <p class="pull-right"><?php echo $content['city'] ?></p></a>
                                     </li>
                                     <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-tasks"></i> Recent Activity <span class="badge badge-danger pull-right">15</span></a>
+                                        <a href="#"> <i class="fa fa-comments-o"></i> Created <p class="pull-right"><?php echo $content['created_at'] ?></p></a>
                                     </li>
+
                                     <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-bell-o"></i> Notification <span class="badge badge-success pull-right">11</span></a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-comments-o"></i> Message <span class="badge badge-warning pull-right r-activity">03</span></a>
+                                        <a href="#"> <i class="fa fa-tasks"></i> Deactivate <button class="badge badge-danger pull-right">Deactivate</button></a>
                                     </li>
                                 </ul>
 
