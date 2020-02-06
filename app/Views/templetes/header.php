@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
-    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/style.css">
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
@@ -72,18 +72,18 @@
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                    <li class="<?php echo $active['dashboard'] ?>">
+                        <a href="/"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Menu</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
+                    <li class="<?php echo $active['Employee'] ?> menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Employee</a>
                         <ul class="sub-menu children dropdown-menu">                         
-                       <li><i class="fa fa-puzzle-piece"></i><a href="<?php base_url() ?>employee">View Employee</a></li>
+                       <li><i class="fa fa-puzzle-piece"></i><a href="/employee/index">View Employee</a></li>
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Manage Employee</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item-has-children dropdown">
+                    <li class="<?php echo $active['Bill'] ?>menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bill</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="tables-basic.html">View Bill</a></li>
@@ -112,7 +112,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>SMS</a>
                       
                     </li>
-                    <li>
+                    <li class="<?php echo $active['pay'] ?>">
                         <a href="<?php base_url() ?>gateway" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>ToyyibPay</a>
                       
                     </li>

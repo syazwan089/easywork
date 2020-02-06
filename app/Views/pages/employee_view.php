@@ -51,7 +51,7 @@
                                             <td><?php echo $item['full_name'] ?></td>
                                             <td><?php echo $item['city'] ?></td>
                                             <td><?php echo $item['created_at'] ?></td>
-                                            <td><a class="btn btn-primary btn-sm" href="<?php echo $item['name'] ?>">View</a></td>
+                                            <td><a class="btn btn-primary btn-sm" href="/employee/view/<?php echo $item['id'] ?>">View</a></td>
                                             
                                         </tr>
 

@@ -19,6 +19,14 @@ class Employee_Model extends Model
             return $result;
         }
 
+        public function detail($id)
+        {
+            $this->where('level', 2);
+            $this->join('level','level.id = level');
+            $result = $this->find($id);
+            return $result;
+        }
+
         public function semula($data)
         {
             $this->update(1, $data);

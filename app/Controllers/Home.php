@@ -1,16 +1,21 @@
 <?php namespace App\Controllers;
 use App\Models\User_Model;
 use App\Models\Gateway_Model;
-
+use CodeIgniter\I18n\Time;
 class Home extends BaseController
 {
 	public function index()
 	{
-		helper('array');
+		$data['active'] = [
+			'dashboard' => 'active'
+		];
 
 		$user = new User_Model();
 
 		$data['enc'] = md5('syazwaniwan');
+
+		$currentTimeinSeconds = time();  
+		$data['time'] = 'EMP' .strval($currentTimeinSeconds - 2001);
 
 		$data['title'] = 'EasyWork';
 		$data['description'] = 'EarsyWork - Manage your salesman';
@@ -28,7 +33,9 @@ class Home extends BaseController
 	{
 		$toyib = new Gateway_Model();
 	
-
+		$data['active'] = [
+			'pay' => 'active'
+		];
 		
 		$data['title'] = 'EasyWork';
 		$data['description'] = 'EarsyWork - Manage your salesman';

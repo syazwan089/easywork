@@ -1003,3 +1003,11 @@ CRITICAL - 2020-02-05 22:09:04 --> Class 'App\Controllers\Employee_model' not fo
 #3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
 #5 {main}
+CRITICAL - 2020-02-05 23:59:49 --> A non-numeric value encountered
+#0 C:\laragon\www\easywork\app\Controllers\Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Home->index()
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#6 {main}
