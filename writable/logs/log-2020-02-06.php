@@ -117,3 +117,12 @@ CRITICAL - 2020-02-06 00:55:03 --> Use of undefined constant base_url - assumed 
 #7 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
 #9 {main}
+CRITICAL - 2020-02-06 03:11:26 --> Argument 2 passed to CodeIgniter\Model::insert() must be of the type boolean, array given, called in C:\laragon\www\easywork\app\Models\Bill_model.php on line 38
+#0 C:\laragon\www\easywork\app\Models\Bill_model.php(38): CodeIgniter\Model->insert(1, Array)
+#1 C:\laragon\www\easywork\app\Controllers\Bill.php(58): App\Models\Bill_Model->masuk(Array)
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#7 {main}

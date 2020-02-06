@@ -84,11 +84,11 @@
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Manage Employee</a></li>
                         </ul>
                     </li>
-                    <li class="<?php echo $active['Bill'] ?>menu-item-has-children dropdown">
+                    <li class="<?php echo $active['Bill'] ?> menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Bill</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.html">View Bill</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.html">Create Bill</a></li>
+                            <li><i class="fa fa-table"></i><a href="/bill/index">View Bill</a></li>
+                            <li><i class="fa fa-table"></i><a href="/bill/add">Create Bill</a></li>
                         </ul>
                     </li>
                     <li>
@@ -97,11 +97,11 @@
                   
                     <li class="menu-title">Inventory</li><!-- /.menu-title -->
 
-                    <li class="menu-item-has-children dropdown">
+                    <li class="<?php echo $active['Product'] ?> menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Product</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">View Product</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Add Product</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/product/index">View Product</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="/product/add">Add Product</a></li>
                         </ul>
                     </li>
                     
