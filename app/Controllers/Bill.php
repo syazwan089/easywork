@@ -110,7 +110,7 @@ class Bill extends BaseController
         
                 $data = [
                     'bill_no' => $obj[0]->BillCode,
-                    'bill_description' =>  $this->request->getVar('bill_detail'),
+                    'bill_description' =>   $pro['product_detail'],
                     'product_name' =>  $pro['product_name'],
                     'bill_amount' =>   $bamount,
                     'payer_organization' =>  $this->request->getVar('cus_orga'),
@@ -118,6 +118,7 @@ class Bill extends BaseController
                     'payer_email' =>  $this->request->getVar('cus_email'),
                     'payment_status' => 'pending',
                     'salesman_id' =>  '1',
+                    'payment_url' => 'PYN'.$obj[0]->BillCode,
                     'payer_name' =>$this->request->getVar('cus_name')
                 ];
                 
@@ -182,6 +183,7 @@ class Bill extends BaseController
                     'payer_email' =>  $this->request->getVar('cus_email'),
                     'payment_status' => 'pending',
                     'salesman_id' =>  '1',
+                    'payment_url' => 'PYN'.$obj[0]->BillCode,
                     'payer_name' =>$this->request->getVar('cus_name')
                 ];
                 

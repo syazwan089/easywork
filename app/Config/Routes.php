@@ -74,7 +74,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/gateway', 'Home::gateway');
-
+$routes->get('/payment/(:any)', 'Payment::payment/$1');
 $routes->get('/gateway/submit', 'Home::submit');
 
 /**
