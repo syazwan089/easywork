@@ -428,3 +428,23 @@ CRITICAL - 2020-02-06 22:27:21 --> Column 'bill_no' cannot be null
 #10 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
 #12 {main}
+CRITICAL - 2020-02-06 22:38:52 --> 
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Common.php(929): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\easywork\app\Controllers\Bill.php(188): redirect('/bill/index')
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#5 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2020-02-06 22:40:05 --> 
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Common.php(929): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\easywork\app\Controllers\Bill.php(188): redirect('/index')
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#5 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#8 {main}

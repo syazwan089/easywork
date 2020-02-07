@@ -111,6 +111,7 @@ class Bill extends BaseController
                 $data = [
                     'bill_no' => $obj[0]->BillCode,
                     'bill_description' =>  $this->request->getVar('bill_detail'),
+                    'product_name' =>  $pro['product_name'],
                     'bill_amount' =>   $bamount,
                     'payer_organization' =>  $this->request->getVar('cus_orga'),
                     'payer_phone' =>  $this->request->getVar('cus_phone'),
@@ -174,18 +175,19 @@ class Bill extends BaseController
                 $data = [
                     'bill_no' => $obj[0]->BillCode,
                     'bill_description' =>  $this->request->getVar('bill_detail'),
+                    'product_name' =>  $this->request->getVar('bill_name'),
                     'bill_amount' =>  $this->request->getVar('amount'),
                     'payer_organization' =>  $this->request->getVar('cus_orga'),
                     'payer_phone' =>  $this->request->getVar('cus_phone'),
                     'payer_email' =>  $this->request->getVar('cus_email'),
                     'payment_status' => 'pending',
-                    'salesman_id' =>  1,
+                    'salesman_id' =>  '1',
                     'payer_name' =>$this->request->getVar('cus_name')
                 ];
                 
-                $inventory->masuk($data);
+                $inventory->baru($data);
                 
-                return redirect('/');
+                return redirect('/index');
 
             }
 
