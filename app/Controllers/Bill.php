@@ -64,10 +64,10 @@ class Bill extends BaseController
             {
 
                 $product = new Product_model();
-                $pro = $product->detail($select);
+                $pro = $product->detail((int)$select);
                 
                 $bamount = $pro['product_amount'];
-                 $realAmount = $bamount * 100;
+                $realAmount = $bamount * 100;
 
               
 
@@ -111,15 +111,16 @@ class Bill extends BaseController
                 $data = [
                     'bill_no' => $obj[0]->BillCode,
                     'bill_description' =>   $pro['product_detail'],
-                    'product_name' =>  $pro['product_name'],
+                   'product_name' =>  $pro['product_name'],
                     'bill_amount' =>   $bamount,
                     'payer_organization' =>  $this->request->getVar('cus_orga'),
                     'payer_phone' =>  $this->request->getVar('cus_phone'),
+                    
+                    'payer_name' =>$this->request->getVar('cus_name'),
                     'payer_email' =>  $this->request->getVar('cus_email'),
                     'payment_status' => 'pending',
                     'salesman_id' =>  '1',
-                    'payment_url' => 'PYN'.$obj[0]->BillCode,
-                    'payer_name' =>$this->request->getVar('cus_name')
+                    'payment_url' => 'PYN'.$obj[0]->BillCode
                 ];
                 
                 $inventory->baru($data);
@@ -133,8 +134,8 @@ class Bill extends BaseController
 
 
                 
-        $bamount =  $this->request->getVar('amount');
-        $realAmount = $bamount * 100;
+                $bamount =  $this->request->getVar('amount');
+                $realAmount = $bamount * 100;
 
                 $some_data = array(
                     'userSecretKey' => $key['secret_key'],
@@ -189,7 +190,7 @@ class Bill extends BaseController
                 
                 $inventory->baru($data);
                 
-                return redirect('/index');
+                return redirect('/');
 
             }
 
