@@ -1,5 +1,7 @@
 <?php namespace App\Models;
-
+use App\Models\Bill_model;
+use App\Models\Gateway_Model;
+use App\Models\Product_model;
 
 use CodeIgniter\Model;
 

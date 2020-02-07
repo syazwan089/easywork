@@ -592,3 +592,17 @@ CRITICAL - 2020-02-07 02:11:21 --> Cannot use object of type stdClass as array
 #3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
 #5 {main}
+CRITICAL - 2020-02-07 02:31:16 --> Call to a member function get_detail() on null
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Payment->runbill('PYNphxlgivn')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}
+CRITICAL - 2020-02-07 02:31:32 --> Call to a member function get_detail() on null
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Payment->runbill('PYNphxlgivn')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}

@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <form>
+                    <form action="runbill/<?php echo $content['payment_url'] ?>" method="post" class="" >
 
 
 
