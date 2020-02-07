@@ -12,7 +12,7 @@
                     <div class="card">
                         <div class="card-header">Add Product</div>
                         <div class="card-body card-block">
-                            <form action="/bill/submit" method="post" class="">
+                            <form action="/product/submit" method="post" class="">
                                 <div class="form-group">
                                 <label for="inputIsValid" class=" form-control-label">Product Name</label>
                                     <div class="input-group">
