@@ -114,7 +114,7 @@
                       
                     </li>
                     <li class="<?php echo $active['pay'] ?>">
-                        <a href="<?php base_url() ?>gateway" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>ToyyibPay</a>
+                        <a href="/gateway" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>ToyyibPay</a>
                       
                     </li>
                 </ul>
