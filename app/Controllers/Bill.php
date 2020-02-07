@@ -56,15 +56,15 @@ class Bill extends BaseController
 
 
         $radio = $this->request->getVar('radio');
-        $select =  $this->request->getVar('select');
+     
 
 
 
             if($radio == 'option1')
             {
-
+                $select =  $this->request->getVar('select');
                 $product = new Product_model();
-                $pro = $product->detail((int)$select);
+                $pro = $product->detail($select);
                 
                 $bamount = $pro['product_amount'];
                 $realAmount = $bamount * 100;

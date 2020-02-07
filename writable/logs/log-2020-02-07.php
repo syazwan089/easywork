@@ -526,3 +526,69 @@ CRITICAL - 2020-02-07 02:01:02 --> Call to a member function first() on null
 #4 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
 #6 {main}
+CRITICAL - 2020-02-07 02:03:13 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}
+CRITICAL - 2020-02-07 02:03:59 --> Column 'bill_no' cannot be null
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `bi...')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2166): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Model.php(713): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\easywork\app\Models\Bill_model.php(49): CodeIgniter\Model->insert(Array)
+#6 C:\laragon\www\easywork\app\Controllers\Bill.php(95): App\Models\Bill_Model->baru(Array)
+#7 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#8 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#9 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2020-02-07 02:04:07 --> Column 'bill_description' cannot be null
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `bi...')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2166): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Model.php(713): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\easywork\app\Models\Bill_model.php(49): CodeIgniter\Model->insert(Array)
+#6 C:\laragon\www\easywork\app\Controllers\Bill.php(95): App\Models\Bill_Model->baru(Array)
+#7 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#8 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#9 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2020-02-07 02:06:04 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}
+CRITICAL - 2020-02-07 02:06:57 --> Call to a member function detail() on null
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}
+CRITICAL - 2020-02-07 02:08:47 --> 
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Common.php(929): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\easywork\app\Controllers\Bill.php(128): redirect('/index')
+#3 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#5 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2020-02-07 02:11:21 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(847): App\Controllers\Bill->submit()
+#1 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(338): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bill))
+#2 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\CodeIgniter.php(246): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\easywork\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\laragon\www\easywork\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#5 {main}

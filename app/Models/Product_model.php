@@ -14,7 +14,7 @@ class Product_Model extends Model
         public function get()
         {
    
-            $this->join('users','users.id = created_by_id');
+            //$this->join('users','users.id = created_by_id');
             $result = $this->findAll();
             return $result;
         }
